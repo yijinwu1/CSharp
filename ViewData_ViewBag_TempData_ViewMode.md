@@ -29,11 +29,11 @@ Home / Index
 
 Index.cshtml的View
 
-> <div>
+> < div >
 
->   <h1>@ViewData["Company"]</h1>
+> < h1 >@ViewData["Company"]< /h1 >
 
-> </div>
+> < /div >
 
 <h2><b>ViewBag</b></h2>
 ● ViewBag 也是 ControllerBase 類的 property<br>
@@ -61,11 +61,9 @@ Home / Index
 
 Index.cshtml的View
 
-> <div>
-
->   <h1>@ViewBag.Company</h1>
-
-> </div>
+> < div >
+>  < h1 >@ViewBag.Company< /h1 >
+> < /div >
 
 <h2><b>TempData</b></h2>
 ● TempData 也是 ControllerBase 類的 property<br>
@@ -91,11 +89,11 @@ Home / Index
 
 Index.cshtml的View
 
-> <div>
+> < div >
 
->   <h1>@TempData["Company"]</h1>
+>   < h1 >@TempData["Company"]< /h1 >
 
-> </div>
+> < /div >
 
 <h2><b>ViewMode</b></h2>
 列舉3段簡化後的程式碼 :<br>
@@ -163,15 +161,15 @@ Login.csthml
 
 > }
 
-> <h2>@ViewBag.Title.</h2>
+> < h2 >@ViewBag.Title.< /h2 >
 
-> <section id="loginForm">
+> < section id="loginForm" >
 
 >  @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 
 >  {
 
->   <h4>Use a local account to log in.</h4><hr />    
+>   < h4 >Use a local account to log in.< /h4 >< hr />    
 
 >   <!--@Html.ValidationSummary()可取得 Controller 透過 ModelState.AddModelError() 傳遞來的錯誤訊息, 做互動或除錯很好用-->
 
